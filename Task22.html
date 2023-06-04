@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>username and password</title>
+    <style>
+        .close {
+            position: absolute;
+            right: 25px;
+            top: 0px;
+            color: #000;
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: red;
+            cursor: pointer;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: red;
+            position: fixed;
+            left: 610px;
+        }
+        
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
+        
+        img.avatar {
+            text-align: center;
+            width: 10%;
+            border-radius: 20%;
+        }
+        
+        .container {
+            padding: 10px;
+            text-align: left;
+            margin: 0 auto;
+            max-width: 300px;
+        }
+        .last {
+            text-align: center;
+            padding: 10px;
+            padding-left: 250px;
+        }
+        label {
+            text-align: center;
+            padding-left: 600px;
+        }
+        h1{
+            text-align: center;
+        }
+        body{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Log in form</h1>
+    <div id="id01" class="user">
+        <form>
+            <div class="imgcontainer">
+                <img src="avatar.GIF" alt="Avatar" class="avatar">
+            </div>
+            <div class="container">
+                <b>UserName:</b><br>
+                <input type="text" name="user" placeholder="Enter Username" style="width: 100%"><br> <!-- Set the input width to 100% -->
+                <b>Password:</b><br>
+                <input type="text" placeholder="Enter Password" name="psw" style="width: 100%"><br> <!-- Set the input width to 100% -->
+                <button type="submit">Login</button><br>
+            </div>
+            <label>
+                <input type="checkbox" checked="checked" name="remember">Remember Me
+            </label><br>
+            <button type="button" class="cancelbtn">Cancel</button>  
+            <div class="last">
+                <a href="#forget" class="forget">Forget Password?</a> 
+            </div>
+        </form>
+        <br><br><br>
+    </div>
+</body>
+</html>
